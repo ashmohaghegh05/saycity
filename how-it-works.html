@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How SayCity Works</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="SayCity home">
+      <svg class="brand-mark" viewBox="40 50 432 432" aria-hidden="true"><path style="fill: var(--signal)" fill-rule="evenodd" d="M144 56H368A104 104 0 0 1 472 160V288A104 104 0 0 1 368 392H236L130 468L158 392H144A104 104 0 0 1 40 288V160A104 104 0 0 1 144 56ZM105 336A9 9 0 0 1 105 318H112V264A12 12 0 0 1 124 252H140A12 12 0 0 1 152 264V318H174V204A12 12 0 0 1 186 192H202A12 12 0 0 1 214 204V318H236V150L267 116V78H276V318H298V180A12 12 0 0 1 310 168H326A12 12 0 0 1 338 180V318H360V240A12 12 0 0 1 372 228H388A12 12 0 0 1 400 240V318H407A9 9 0 0 1 407 336Z"/></svg>
+      SAYCITY
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="how-it-works.html" aria-current="page">How it works</a></li>
+      <li><a href="for-cities.html">For cities</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="btn" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap stack">
+      <span class="eyebrow">How it works</span>
+      <h1>From a sentence on the sidewalk to a work order on a crew's tablet.</h1>
+      <p class="lede">SayCity sits between the people who notice problems and the people who fix them. It does the sorting, translating and paperwork in between, in seconds.</p>
+    </div>
+  </section>
+  <div class="page-hero-band band"><img src="assets/skyline.jpg" alt="" width="1100" height="410"></div>
+
+  <section class="section" aria-labelledby="pipe-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The pipeline</span>
+        <h2 id="pipe-title">Six things happen after someone speaks.</h2>
+      </div>
+      <ol class="pipeline">
+        <li>
+          <span class="n">01</span>
+          <h3>Speak</h3>
+          <p>The resident taps once and describes the problem out loud. They can add a photo. They don't need an account, a case number or the name of the right department.<span class="eg">“There's a huge hole in the bike lane on Main.”</span></p>
+        </li>
+        <li>
+          <span class="n">02</span>
+          <h3>Understand</h3>
+          <p>Speech is transcribed and translated, and the original is kept alongside the translation so nothing is lost. SayCity pulls out the problem type, the hazard and any detail a crew would ask about.<span class="eg">lang=es → en · category=PTH · hazard=cyclist</span></p>
+        </li>
+        <li>
+          <span class="n">03</span>
+          <h3>Locate</h3>
+          <p>GPS gives the point. Spoken landmarks like “across from the library” or “by the bus shelter” sharpen it, so crews find the problem on the first trip.<span class="eg">42.3601° N, 71.0589° W · ±6 m</span></p>
+        </li>
+        <li>
+          <span class="n">04</span>
+          <h3>Triage</h3>
+          <p>Each report gets a severity score. A dark crosswalk next to a school outranks a faded parking line. Repeat reports of the same problem merge into one ticket and raise its priority.<span class="eg">severity=critical · school_zone · night · 5 merged</span></p>
+        </li>
+        <li>
+          <span class="n">05</span>
+          <h3>Route</h3>
+          <p>The ticket goes to the department that owns that asset, through the 311 and work-order tools the city already uses. Nobody has to retype it.<span class="eg">→ Street Lighting Division · WO-55120</span></p>
+        </li>
+        <li>
+          <span class="n">06</span>
+          <h3>Close the loop</h3>
+          <p>When the work is scheduled and again when it's finished, the resident gets an update in the language they spoke. Neighbors can see the fix on the public map.<span class="eg">status=resolved · notified in es</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="anatomy-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Anatomy of a report</span>
+        <h2 id="anatomy-title">What lands on the city's side.</h2>
+        <p class="lede">Every SayCity ticket is structured, consistent and ready to dispatch. The values below are an example.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Field</th><th>Example</th><th>Why it matters</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Report ID</td><td class="mono">SC-24-08714</td><td>One ID follows the issue from first report to final fix.</td></tr>
+            <tr><td>Original words</td><td>“The streetlight outside 214 Elm has been out for a week…”</td><td>Staff can always check what the resident actually said.</td></tr>
+            <tr><td>Language</td><td class="mono">en</td><td>Updates go back in the same language.</td></tr>
+            <tr><td>Service code</td><td class="mono">LGT · Streetlight out</td><td>Matches the categories city departments already use.</td></tr>
+            <tr><td>Severity</td><td><span class="pill crit">Critical</span></td><td>Puts injury risks at the top of the queue.</td></tr>
+            <tr><td>Location</td><td class="mono">42.3588° N, 71.0612° W</td><td>Crews drive to the exact spot.</td></tr>
+            <tr><td>Merged reports</td><td class="mono">5</td><td>Shows how many people are affected without flooding the queue.</td></tr>
+            <tr><td>Assigned to</td><td>Street Lighting Division</td><td>No manual sorting by a dispatcher.</td></tr>
+            <tr><td>Status</td><td><span class="pill info">Scheduled</span></td><td>Visible to staff and to the resident who reported it.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="access-title">
+    <div class="wrap grid-2" style="align-items: start;">
+      <div class="stack">
+        <span class="eyebrow">Built for everyone</span>
+        <h2 id="access-title">Voice first, so more people can take part.</h2>
+        <p class="lede">Typed forms favor people who read English well, know city jargon and have time to spare. Speaking removes those barriers.</p>
+      </div>
+      <div class="grid-2" style="align-items: start;">
+        <div class="tile"><h3>Any language</h3><p>Residents speak in the language they think in. Staff read it in theirs.</p></div>
+        <div class="tile"><h3>Any reading level</h3><p>No forms to fill out and no categories to choose from.</p></div>
+        <div class="tile"><h3>Low vision</h3><p>Reporting works start to finish with a screen reader and voice alone.</p></div>
+        <div class="tile"><h3>No account</h3><p>Report first. Add a phone number or email only if you want updates.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Questions</span>
+        <h2 id="faq-title">Common questions</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Does SayCity replace 311?</summary>
+          <p>No. It feeds it. SayCity is a faster, multilingual front door that sends clean, structured tickets into the systems a city already runs.</p>
+        </details>
+        <details>
+          <summary>What happens to my voice recording?</summary>
+          <p>SayCity is designed to keep the transcript and drop the audio once a report is processed. Names and phone numbers mentioned in a report are removed before it reaches the public map.</p>
+        </details>
+        <details>
+          <summary>What if a report is an emergency?</summary>
+          <p>If someone describes a life-threatening situation, like a downed power line or a gas smell, SayCity tells them to call emergency services right away and flags the report for the city's emergency contact.</p>
+        </details>
+        <details>
+          <summary>How does SayCity know which department to send a report to?</summary>
+          <p>During setup, each city maps service codes and areas to the teams that own them. SayCity applies that map to every report automatically, and staff can reassign a ticket in one click.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta band" aria-labelledby="cta-title">
+    <div class="wrap cta-inner">
+      <div>
+        <span class="eyebrow">Next</span>
+        <h2 id="cta-title">See what your team would see.</h2>
+        <p class="muted">The city console turns every report into a live, ranked queue.</p>
+      </div>
+      <div class="btn-row" style="flex: 0 1 auto;">
+        <a class="btn" href="for-cities.html">For cities <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="stack" style="gap: 12px;">
+        <a class="brand" href="index.html"><svg class="brand-mark" viewBox="40 50 432 432" aria-hidden="true"><path style="fill: var(--signal)" fill-rule="evenodd" d="M144 56H368A104 104 0 0 1 472 160V288A104 104 0 0 1 368 392H236L130 468L158 392H144A104 104 0 0 1 40 288V160A104 104 0 0 1 144 56ZM105 336A9 9 0 0 1 105 318H112V264A12 12 0 0 1 124 252H140A12 12 0 0 1 152 264V318H174V204A12 12 0 0 1 186 192H202A12 12 0 0 1 214 204V318H236V150L267 116V78H276V318H298V180A12 12 0 0 1 310 168H326A12 12 0 0 1 338 180V318H360V240A12 12 0 0 1 372 228H388A12 12 0 0 1 400 240V318H407A9 9 0 0 1 407 336Z"/></svg>SAYCITY</a>
+        <p class="muted">Every city. Every voice. Real-time change.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="for-cities.html">For cities</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><span class="mono">amohaghegh1@babson.edu</span></li>
+          <li><a href="contact.html">Send a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal"><span>© 2026 SayCity</span><span>Every voice counts</span></div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

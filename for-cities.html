@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SayCity for Cities</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="SayCity home">
+      <svg class="brand-mark" viewBox="40 50 432 432" aria-hidden="true"><path style="fill: var(--signal)" fill-rule="evenodd" d="M144 56H368A104 104 0 0 1 472 160V288A104 104 0 0 1 368 392H236L130 468L158 392H144A104 104 0 0 1 40 288V160A104 104 0 0 1 144 56ZM105 336A9 9 0 0 1 105 318H112V264A12 12 0 0 1 124 252H140A12 12 0 0 1 152 264V318H174V204A12 12 0 0 1 186 192H202A12 12 0 0 1 214 204V318H236V150L267 116V78H276V318H298V180A12 12 0 0 1 310 168H326A12 12 0 0 1 338 180V318H360V240A12 12 0 0 1 372 228H388A12 12 0 0 1 400 240V318H407A9 9 0 0 1 407 336Z"/></svg>
+      SAYCITY
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="for-cities.html" aria-current="page">For cities</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="btn" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap stack">
+      <span class="eyebrow">For cities &amp; agencies</span>
+      <h1>One live map of everything your residents are telling you.</h1>
+      <p class="lede">SayCity gives public works, transportation and utility teams a ranked, real-time queue of clean reports. The most dangerous problems rise to the top on their own, so crews spend their time fixing instead of sorting.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;" aria-labelledby="console-title">
+    <div class="wrap">
+      <h2 id="console-title" class="tracked" style="font-size: .74rem; color: var(--ink-3); margin-bottom: 14px;">The city console</h2>
+      <div class="panel console">
+        <div class="console-bar">
+          <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="mono" style="color: var(--ink-2);">console.saycity · Live queue</span>
+          <span class="example-tag">Sample city · illustrative data</span>
+        </div>
+        <div class="console-body">
+          <ul class="queue">
+            <li>
+              <span class="stripe crit"></span>
+              <div><div class="q-title">Traffic signal dark at school crossing</div><div class="q-meta">SIG · Oak St &amp; 4th · 8 reports</div></div>
+              <div class="q-right"><span class="pill crit">Critical</span><span class="mono" style="color: var(--ink-3); font-size: .72rem;">2 min ago</span></div>
+            </li>
+            <li>
+              <span class="stripe crit"></span>
+              <div><div class="q-title">Streetlight out at marked crosswalk</div><div class="q-meta">LGT · 214 Elm St · 5 reports</div></div>
+              <div class="q-right"><span class="pill crit">Critical</span><span class="mono" style="color: var(--ink-3); font-size: .72rem;">11 min ago</span></div>
+            </li>
+            <li>
+              <span class="stripe high"></span>
+              <div><div class="q-title">Pothole in bike lane</div><div class="q-meta">PTH · Main St &amp; 3rd Ave · 3 reports</div></div>
+              <div class="q-right"><span class="pill high">High</span><span class="mono" style="color: var(--ink-3); font-size: .72rem;">26 min ago</span></div>
+            </li>
+            <li>
+              <span class="stripe high"></span>
+              <div><div class="q-title">Storm drain clogged at bus stop</div><div class="q-meta">DRN · Harbor Ave · 2 reports</div></div>
+              <div class="q-right"><span class="pill high">High</span><span class="mono" style="color: var(--ink-3); font-size: .72rem;">1 hr ago</span></div>
+            </li>
+            <li>
+              <span class="stripe info"></span>
+              <div><div class="q-title">Curb ramp blocked by construction sign</div><div class="q-meta">SWK · Central St · 1 report</div></div>
+              <div class="q-right"><span class="pill info">Scheduled</span><span class="mono" style="color: var(--ink-3); font-size: .72rem;">3 hr ago</span></div>
+            </li>
+            <li>
+              <span class="stripe ok"></span>
+              <div><div class="q-title">Fallen branch removed from travel lane</div><div class="q-meta">SGN · Park Rd · 4 reports</div></div>
+              <div class="q-right"><span class="pill ok">Resolved</span><span class="mono" style="color: var(--ink-3); font-size: .72rem;">5 hr ago</span></div>
+            </li>
+          </ul>
+          <div class="map" role="img" aria-label="Stylized city map with report locations colored by severity">
+            <svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <pattern id="blocks" width="110" height="100" patternUnits="userSpaceOnUse">
+                  <rect x="9" y="9" width="92" height="82" rx="3" style="fill: var(--paper)"/>
+                </pattern>
+              </defs>
+              <rect width="600" height="420" style="fill: var(--sky-2)"/>
+              <rect width="600" height="420" fill="url(#blocks)"/>
+              <rect x="229" y="109" width="92" height="82" rx="3" style="fill: var(--ok-soft)"/>
+              <path d="M-10 410 L620 30" style="stroke: var(--sky-2); stroke-width: 16; fill: none"/>
+              <path d="M-10 410 L620 30" style="stroke: var(--line); stroke-width: 1; stroke-dasharray: 6 8; fill: none"/>
+              <g>
+                <circle cx="104" cy="196" r="7" class="ping" style="fill: var(--crit)"/>
+                <circle cx="104" cy="196" r="7" style="fill: var(--crit)"/>
+                <circle cx="434" cy="98" r="7" class="ping" style="fill: var(--crit); animation-delay: .8s"/>
+                <circle cx="434" cy="98" r="7" style="fill: var(--crit)"/>
+                <circle cx="325" cy="300" r="6" style="fill: var(--warn)"/>
+                <circle cx="205" cy="95" r="6" style="fill: var(--warn)"/>
+                <circle cx="520" cy="250" r="6" style="fill: var(--warn)"/>
+                <circle cx="150" cy="300" r="5.5" style="fill: var(--signal)"/>
+                <circle cx="380" cy="205" r="5.5" style="fill: var(--signal)"/>
+                <circle cx="545" cy="355" r="5" style="fill: var(--ok)"/>
+                <circle cx="60" cy="90" r="5" style="fill: var(--ok)"/>
+                <circle cx="270" cy="400" r="5" style="fill: var(--ok)"/>
+              </g>
+            </svg>
+            <div class="legend">
+              <span><i style="background: var(--crit)"></i>Critical</span>
+              <span><i style="background: var(--warn)"></i>High</span>
+              <span><i style="background: var(--signal)"></i>Scheduled</span>
+              <span><i style="background: var(--ok)"></i>Resolved</span>
+            </div>
+          </div>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><b>142</b><span>Open reports</span></div>
+          <div class="kpi"><b>6</b><span>Critical now</span></div>
+          <div class="kpi"><b>57</b><span>Duplicates merged today</span></div>
+          <div class="kpi"><b>11</b><span>Languages heard this week</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="value-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What changes</span>
+        <h2 id="value-title">Faster fixes, fewer injuries, better decisions.</h2>
+      </div>
+      <div class="grid-4">
+        <div class="tile"><h3>Shorter wait times</h3><p>Reports arrive already categorized, located and assigned. The manual sorting step between a call and a crew disappears.</p></div>
+        <div class="tile"><h3>Fewer injuries</h3><p>Severity scoring pushes hazards near schools, crosswalks and transit to the front, before someone trips, crashes or falls.</p></div>
+        <div class="tile"><h3>Smarter spending</h3><p>Patterns by block and by season show where repeat repairs point to a bigger capital project.</p></div>
+        <div class="tile"><h3>More trust</h3><p>Residents see their report move from received to fixed. Neighborhoods that rarely called 311 start to be heard.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="fit-title">
+    <div class="wrap grid-2" style="align-items: start;">
+      <div class="stack">
+        <span class="eyebrow">Fits what you run</span>
+        <h2 id="fit-title">No rip-and-replace.</h2>
+        <p class="lede">SayCity connects to the tools your departments already depend on. Tickets flow in as structured records, and status changes flow back out to residents.</p>
+      </div>
+      <div class="table-wrap">
+        <table style="min-width: 0;">
+          <thead><tr><th>Connects to</th><th>What moves</th></tr></thead>
+          <tbody>
+            <tr><td>311 / CRM</td><td>New tickets, merged duplicates, resident contact preferences</td></tr>
+            <tr><td>Work orders</td><td>Assignments, crew notes, scheduled and completed status</td></tr>
+            <tr><td>GIS</td><td>Report locations, district boundaries, asset layers</td></tr>
+            <tr><td>Open data</td><td>Anonymized report and resolution data for public dashboards</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="pilot-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Pilot program</span>
+        <h2 id="pilot-title">Start with a few districts. Expand when the results show up.</h2>
+      </div>
+      <div class="grid-4">
+        <div class="tile"><span class="step-num">01</span><h3>Choose districts</h3><p>Pick two or three neighborhoods, ideally including ones that report the least today.</p></div>
+        <div class="tile"><span class="step-num">02</span><h3>Connect routing</h3><p>Map service codes to departments and link your existing ticketing system.</p></div>
+        <div class="tile"><span class="step-num">03</span><h3>Launch to residents</h3><p>QR codes on bus shelters, posts from community groups, and a line on every utility bill.</p></div>
+        <div class="tile"><span class="step-num">04</span><h3>Review at 90 days</h3><p>Compare time-to-fix, report volume and resident reach against the months before launch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta band" aria-labelledby="cta-title">
+    <div class="wrap cta-inner">
+      <div>
+        <span class="eyebrow">Talk to us</span>
+        <h2 id="cta-title">Interested in a pilot?</h2>
+        <p class="muted">Email <span class="mono">amohaghegh1@babson.edu</span> or send a message from the contact page.</p>
+      </div>
+      <div class="btn-row" style="flex: 0 1 auto;">
+        <a class="btn" href="contact.html">Contact us <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="stack" style="gap: 12px;">
+        <a class="brand" href="index.html"><svg class="brand-mark" viewBox="40 50 432 432" aria-hidden="true"><path style="fill: var(--signal)" fill-rule="evenodd" d="M144 56H368A104 104 0 0 1 472 160V288A104 104 0 0 1 368 392H236L130 468L158 392H144A104 104 0 0 1 40 288V160A104 104 0 0 1 144 56ZM105 336A9 9 0 0 1 105 318H112V264A12 12 0 0 1 124 252H140A12 12 0 0 1 152 264V318H174V204A12 12 0 0 1 186 192H202A12 12 0 0 1 214 204V318H236V150L267 116V78H276V318H298V180A12 12 0 0 1 310 168H326A12 12 0 0 1 338 180V318H360V240A12 12 0 0 1 372 228H388A12 12 0 0 1 400 240V318H407A9 9 0 0 1 407 336Z"/></svg>SAYCITY</a>
+        <p class="muted">Every city. Every voice. Real-time change.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="for-cities.html">For cities</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><span class="mono">amohaghegh1@babson.edu</span></li>
+          <li><a href="contact.html">Send a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal"><span>© 2026 SayCity</span><span>Every voice counts</span></div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

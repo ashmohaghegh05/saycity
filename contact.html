@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact SayCity</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="SayCity home">
+      <svg class="brand-mark" viewBox="40 50 432 432" aria-hidden="true"><path style="fill: var(--signal)" fill-rule="evenodd" d="M144 56H368A104 104 0 0 1 472 160V288A104 104 0 0 1 368 392H236L130 468L158 392H144A104 104 0 0 1 40 288V160A104 104 0 0 1 144 56ZM105 336A9 9 0 0 1 105 318H112V264A12 12 0 0 1 124 252H140A12 12 0 0 1 152 264V318H174V204A12 12 0 0 1 186 192H202A12 12 0 0 1 214 204V318H236V150L267 116V78H276V318H298V180A12 12 0 0 1 310 168H326A12 12 0 0 1 338 180V318H360V240A12 12 0 0 1 372 228H388A12 12 0 0 1 400 240V318H407A9 9 0 0 1 407 336Z"/></svg>
+      SAYCITY
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="for-cities.html">For cities</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="btn" href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap stack">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's talk about your city.</h1>
+      <p class="lede">Whether you run a city department, want to invest, or just have a pothole you're tired of dodging, we'd like to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;" aria-label="Contact options">
+    <div class="wrap grid-2" style="align-items: start;">
+      <div class="stack" style="gap: 20px;">
+        <div class="panel email-card">
+          <span class="tracked" style="font-size: .68rem; color: var(--ink-3);">Email</span>
+          <div class="email-line">
+            <span class="email-addr" id="email-addr">amohaghegh1@babson.edu</span>
+            <button class="copy-btn" type="button" data-copy="amohaghegh1@babson.edu" data-copy-from="#email-addr">Copy</button>
+          </div>
+          <p class="muted">Write to this address directly, or use the form to put your message together first.</p>
+        </div>
+        <div class="grid-2" style="align-items: start;">
+          <div class="tile"><h3>Cities &amp; agencies</h3><p>Pilot programs, integrations and pricing.</p></div>
+          <div class="tile"><h3>Investors &amp; partners</h3><p>Our roadmap, the market and how to get involved.</p></div>
+        </div>
+      </div>
+
+      <form class="panel contact" id="contact-form" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input id="c-name" name="c-name" type="text" autocomplete="name" placeholder="Jordan Rivera">
+          </div>
+          <div class="field">
+            <label for="c-org">Organization <span style="font-weight: 500; letter-spacing: .04em; text-transform: none;">(optional)</span></label>
+            <input id="c-org" name="c-org" type="text" autocomplete="organization" placeholder="City Department of Public Works">
+          </div>
+        </div>
+        <fieldset class="field">
+          <legend>I am</legend>
+          <div class="radios">
+            <label><input type="radio" id="r-city" name="c-role" value="City or agency" checked> City or agency</label>
+            <label><input type="radio" id="r-inv" name="c-role" value="Investor"> Investor</label>
+            <label><input type="radio" id="r-partner" name="c-role" value="Partner"> Partner</label>
+            <label><input type="radio" id="r-res" name="c-role" value="Resident"> Resident</label>
+            <label><input type="radio" id="r-press" name="c-role" value="Press"> Press</label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="c-msg">Message</label>
+          <textarea id="c-msg" name="c-msg" placeholder="We'd like to pilot SayCity in two districts this spring. Who should we talk to about setup?"></textarea>
+        </div>
+        <p class="error" id="form-error" role="alert" hidden></p>
+        <div><button class="btn" type="submit">Prepare message <span class="arrow" aria-hidden="true">→</span></button></div>
+
+        <div class="ready" id="ready" hidden>
+          <strong>Your message is ready.</strong>
+          <p class="muted" style="margin-top: -6px;">Copy it and send it to <span class="mono">amohaghegh1@babson.edu</span>, or open it in your email app.</p>
+          <pre id="ready-text"></pre>
+          <div class="btn-row">
+            <button class="btn" type="button" data-copy-from="#ready-text">Copy message</button>
+            <a class="btn btn-ghost" id="ready-mail" href="mailto:amohaghegh1@babson.edu">Open in email app</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="stack" style="gap: 12px;">
+        <a class="brand" href="index.html"><svg class="brand-mark" viewBox="40 50 432 432" aria-hidden="true"><path style="fill: var(--signal)" fill-rule="evenodd" d="M144 56H368A104 104 0 0 1 472 160V288A104 104 0 0 1 368 392H236L130 468L158 392H144A104 104 0 0 1 40 288V160A104 104 0 0 1 144 56ZM105 336A9 9 0 0 1 105 318H112V264A12 12 0 0 1 124 252H140A12 12 0 0 1 152 264V318H174V204A12 12 0 0 1 186 192H202A12 12 0 0 1 214 204V318H236V150L267 116V78H276V318H298V180A12 12 0 0 1 310 168H326A12 12 0 0 1 338 180V318H360V240A12 12 0 0 1 372 228H388A12 12 0 0 1 400 240V318H407A9 9 0 0 1 407 336Z"/></svg>SAYCITY</a>
+        <p class="muted">Every city. Every voice. Real-time change.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="for-cities.html">For cities</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><span class="mono">amohaghegh1@babson.edu</span></li>
+          <li><a href="contact.html">Send a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal"><span>© 2026 SayCity</span><span>Every voice counts</span></div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

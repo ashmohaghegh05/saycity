@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SayCity</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="SayCity lets anyone report infrastructure problems by voice, in any language, and routes them to the city team that fixes them in real time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="SayCity home">
+      <svg class="brand-mark" viewBox="40 50 432 432" aria-hidden="true"><path style="fill: var(--signal)" fill-rule="evenodd" d="M144 56H368A104 104 0 0 1 472 160V288A104 104 0 0 1 368 392H236L130 468L158 392H144A104 104 0 0 1 40 288V160A104 104 0 0 1 144 56ZM105 336A9 9 0 0 1 105 318H112V264A12 12 0 0 1 124 252H140A12 12 0 0 1 152 264V318H174V204A12 12 0 0 1 186 192H202A12 12 0 0 1 214 204V318H236V150L267 116V78H276V318H298V180A12 12 0 0 1 310 168H326A12 12 0 0 1 338 180V318H360V240A12 12 0 0 1 372 228H388A12 12 0 0 1 400 240V318H407A9 9 0 0 1 407 336Z"/></svg>
+      SAYCITY
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="for-cities.html">For cities</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="btn" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero band" aria-labelledby="hero-title">
+    <div class="wrap hero-copy">
+      <svg class="hero-mark" viewBox="40 50 432 432" aria-hidden="true"><path style="fill: var(--signal)" fill-rule="evenodd" d="M144 56H368A104 104 0 0 1 472 160V288A104 104 0 0 1 368 392H236L130 468L158 392H144A104 104 0 0 1 40 288V160A104 104 0 0 1 144 56ZM105 336A9 9 0 0 1 105 318H112V264A12 12 0 0 1 124 252H140A12 12 0 0 1 152 264V318H174V204A12 12 0 0 1 186 192H202A12 12 0 0 1 214 204V318H236V150L267 116V78H276V318H298V180A12 12 0 0 1 310 168H326A12 12 0 0 1 338 180V318H360V240A12 12 0 0 1 372 228H388A12 12 0 0 1 400 240V318H407A9 9 0 0 1 407 336Z"/></svg>
+      <h1 id="hero-title" class="wordmark">SAYCITY</h1>
+      <p class="tagline">Every city. Every voice.<br>Real-time change.</p>
+      <p class="hero-sub">Speak up about a dark streetlight, a pothole or a broken sidewalk, in whatever language you speak. SayCity turns it into a precise, mapped report and sends it straight to the city team that fixes it.</p>
+      <div class="btn-row">
+        <a class="btn" href="how-it-works.html">See how it works <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="for-cities.html">Bring it to your city</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/skyline.jpg" alt="City towers rising above a layer of morning fog" width="1100" height="410">
+    </div>
+  </section>
+
+  <section class="section stats" aria-labelledby="stats-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">By the numbers</span>
+        <h2 id="stats-title">Bad roads cost everyone, and language keeps many people from reporting them.</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-group">
+          <h3 class="group-label">The cost of waiting</h3>
+          <div class="stat">
+            <div class="figure">40%</div>
+            <p>of major U.S. roads are in poor or mediocre condition. That's roughly 2 in every 5.</p>
+            <div class="roadbar" role="img" aria-label="2 of 5 road segments marked poor or mediocre"><i class="bad"></i><i class="bad"></i><i></i><i></i><i></i></div>
+            <cite>TRIP, April 2026 · <a href="https://tripnet.org" target="_blank" rel="noopener">tripnet.org</a></cite>
+          </div>
+          <div class="stat-pair">
+            <div class="stat">
+              <div class="figure">$169B</div>
+              <p>a year in extra costs to U.S. drivers from deteriorated roads, about <strong>$723 per driver</strong>, for repairs, depreciation, fuel and tire wear.</p>
+              <cite>TRIP, 2026 · <a href="https://tripnet.org" target="_blank" rel="noopener">tripnet.org</a></cite>
+            </div>
+            <div class="stat">
+              <div class="figure">44M</div>
+              <p>U.S. drivers paid for pothole-related vehicle repairs in 2022, averaging <strong>$406 per repair</strong>.</p>
+              <cite>AAA, 2023 · <a href="https://newsroom.acg.aaa.com" target="_blank" rel="noopener">newsroom.acg.aaa.com</a></cite>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-group">
+          <h3 class="group-label">Who gets heard</h3>
+          <div class="stat">
+            <div class="figure">22%</div>
+            <p>of U.S. residents age 5 and older speak a language other than English at home. That's more than 1 in 5.</p>
+            <cite>U.S. Census Bureau, 2017–2021 data released 2025 · <a href="https://www.census.gov" target="_blank" rel="noopener">census.gov</a></cite>
+          </div>
+          <div class="stat">
+            <div class="figure">38%</div>
+            <p>of those residents speak English less than “very well.”</p>
+            <cite>Calculated from the Census finding that 62% speak English “very well”</cite>
+          </div>
+          <div class="stat derived">
+            <div class="langbar" role="img" aria-label="Of all U.S. residents age 5 and up, 22% speak another language at home and about 8% speak English less than very well">
+              <span class="seg-other" style="width: 22%"></span><span class="seg-limited" style="width: 8.4%"></span>
+            </div>
+            <div class="legend">
+              <span><i class="sw-limited"></i>≈ 8% of all residents speak English less than “very well”</span>
+              <span><i class="sw-other"></i>22% speak another language at home</span>
+            </div>
+            <p>That's about <strong>1 in 12 residents</strong> who could struggle with an English-only reporting form. SayCity lets them speak in their own language.</p>
+            <cite>SayCity estimate: 38% × 22% of residents age 5+</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="film-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Watch</span>
+        <h2 id="film-title">From one voice to a fixed street in 25 seconds.</h2>
+        <p class="lede">A resident reports a pothole in Spanish. SayCity sends it to the city, the nearest city crew is assigned, and Public Works repairs it the same night.</p>
+      </div>
+      <figure class="film">
+        <div class="film-frame">
+          <video id="film" controls playsinline preload="metadata" poster="assets/film-poster.jpg" width="1920" height="1080">
+            <source src="assets/saycity-film.mp4" type="video/mp4">
+          </video>
+        </div>
+        <figcaption class="film-note">Animated concept film · 25 seconds · no sound</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="demo-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Say it</span>
+        <h2 id="demo-title">One sentence, any language. A report a crew can act on.</h2>
+        <p class="lede">Residents talk the way they normally would. SayCity understands what they said, where they are, how dangerous it is, and who is responsible for fixing it.</p>
+      </div>
+
+      <div class="demo" id="demo">
+        <div class="panel voice">
+          <div class="lang-chips" role="tablist" aria-label="Example languages">
+            <button class="chip-btn" type="button" role="tab" aria-selected="true">Español</button>
+            <button class="chip-btn" type="button" role="tab" aria-selected="false">English</button>
+            <button class="chip-btn" type="button" role="tab" aria-selected="false">Português</button>
+            <button class="chip-btn" type="button" role="tab" aria-selected="false" lang="zh">中文</button>
+            <button class="chip-btn" type="button" role="tab" aria-selected="false" lang="ar">العربية</button>
+          </div>
+          <div class="mic-row" aria-hidden="true">
+            <div class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg></div>
+            <div class="wave">
+              <i style="--h:30%;--d:-.1s"></i><i style="--h:55%;--d:-.3s"></i><i style="--h:80%;--d:-.5s"></i><i style="--h:45%;--d:-.2s"></i><i style="--h:95%;--d:-.7s"></i><i style="--h:60%;--d:-.4s"></i><i style="--h:35%;--d:-.9s"></i><i style="--h:70%;--d:-.15s"></i><i style="--h:90%;--d:-.6s"></i><i style="--h:50%;--d:-.35s"></i><i style="--h:25%;--d:-.8s"></i><i style="--h:65%;--d:-.25s"></i><i style="--h:85%;--d:-.55s"></i><i style="--h:40%;--d:-.45s"></i><i style="--h:75%;--d:-.05s"></i><i style="--h:30%;--d:-.65s"></i><i style="--h:60%;--d:-.85s"></i><i style="--h:95%;--d:-.2s"></i><i style="--h:45%;--d:-.75s"></i><i style="--h:70%;--d:-.3s"></i><i style="--h:35%;--d:-.5s"></i><i style="--h:55%;--d:-.1s"></i><i style="--h:80%;--d:-.95s"></i><i style="--h:40%;--d:-.4s"></i><i style="--h:65%;--d:-.6s"></i><i style="--h:25%;--d:-.25s"></i><i style="--h:50%;--d:-.7s"></i><i style="--h:85%;--d:-.15s"></i><i style="--h:30%;--d:-.55s"></i><i style="--h:60%;--d:-.35s"></i>
+            </div>
+          </div>
+          <p class="quote fade-swap" data-f="said" lang="es">“Hay un bache enorme en la esquina de Main y la Tercera. Casi me caigo con la bicicleta.”</p>
+          <div class="quote-meta fade-swap"><span data-f="lang">Detected: Español</span><span>Voice · 0:07</span></div>
+        </div>
+
+        <div class="demo-arrow" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h26M24 12l8 8-8 8"/></svg>
+        </div>
+
+        <article class="panel ticket" aria-live="polite">
+          <div class="ticket-head">
+            <span class="mono fade-swap" data-f="id">SC-24-08713</span>
+            <span class="example-tag">Example report</span>
+          </div>
+          <dl class="fade-swap">
+            <dt>Issue</dt><dd data-f="cat">PTH · Pothole</dd>
+            <dt>Severity</dt><dd><span class="pill high" data-f="sev">High · cyclist hazard</span></dd>
+            <dt>Summary</dt><dd data-f="en">Large pothole at Main St &amp; 3rd Ave. Cyclist nearly fell.</dd>
+            <dt>Location</dt><dd class="mono" data-f="loc">Main St &amp; 3rd Ave · 42.3601° N, 71.0589° W</dd>
+            <dt>Routed to</dt><dd data-f="route">Public Works · Street Maintenance</dd>
+            <dt>Duplicates</dt><dd data-f="dupes">2 nearby reports merged</dd>
+          </dl>
+          <div class="ticket-foot"><span class="pill ok">Sent</span> Reporter gets updates in their own language</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="app-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The app</span>
+        <h2 id="app-title">Four screens from report to repair.</h2>
+        <p class="lede">Residents speak, confirm and follow along. The city gets a clean report and does the work.</p>
+      </div>
+      <ol class="screens">
+        <li>
+          <img src="assets/screen-1-speak.png" alt="Speak screen: a Spanish voice report transcribed live with an English translation" width="531" height="1100" loading="lazy">
+          <span class="step-num">01 · Speak</span>
+          <h3>Talk in any language</h3>
+          <p>A live transcript appears as you speak, with an instant English translation.</p>
+        </li>
+        <li>
+          <img src="assets/screen-2-review.png" alt="Review screen: pothole photo with issue, risk, location and city department filled in" width="531" height="1100" loading="lazy">
+          <span class="step-num">02 · Review</span>
+          <h3>Details filled in</h3>
+          <p>Issue, risk, location and the right city department, ready to send.</p>
+        </li>
+        <li>
+          <img src="assets/screen-3-track.png" alt="Track screen: map of a city crew on the way and a status timeline" width="531" height="1100" loading="lazy">
+          <span class="step-num">03 · Track</span>
+          <h3>Follow the city crew</h3>
+          <p>See when the city receives it, assigns a crew and sends them out.</p>
+        </li>
+        <li>
+          <img src="assets/screen-4-fixed.png" alt="Fixed screen: confirmation with before and after photos and a language toggle" width="531" height="1100" loading="lazy">
+          <span class="step-num">04 · Fixed</span>
+          <h3>Hear back</h3>
+          <p>Get the update in your language, with before and after photos.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="flow-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Seen. Fixed.</span>
+        <h2 id="flow-title">Three steps from a hazard to a repair.</h2>
+      </div>
+      <div class="grid-3">
+        <div class="tile">
+          <span class="step-num">01 · Say it</span>
+          <h3>Tap and talk</h3>
+          <p>No forms, no dropdowns, no account required. Describe the problem out loud in any language and add a photo if you want to.</p>
+        </div>
+        <div class="tile">
+          <span class="step-num">02 · Seen</span>
+          <h3>Mapped, ranked and routed</h3>
+          <p>SayCity transcribes and translates the report, pins its location, merges duplicates, scores the risk and sends it to the right department.</p>
+        </div>
+        <div class="tile">
+          <span class="step-num">03 · Fixed</span>
+          <h3>The loop closes</h3>
+          <p>Crews see the most dangerous problems first. You get a status update when the work is scheduled and again when it's done.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="codes-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What people report</span>
+        <h2 id="codes-title">The everyday problems that turn into injuries when they wait.</h2>
+        <p class="lede">Each report gets a service code so it lands with the team that owns it.</p>
+      </div>
+      <div class="codes">
+        <div class="code-cell"><span class="code">LGT</span><h3>Streetlights</h3><p>Dark crosswalks, flickering poles, entire blocks without light after sunset.</p></div>
+        <div class="code-cell"><span class="code">PTH</span><h3>Potholes &amp; road damage</h3><p>Craters, sinkholes and cracked asphalt that damage cars and throw cyclists.</p></div>
+        <div class="code-cell"><span class="code">SWK</span><h3>Sidewalks &amp; curb ramps</h3><p>Heaved slabs, missing ramps and blocked paths that shut out wheelchairs, walkers and strollers.</p></div>
+        <div class="code-cell"><span class="code">SIG</span><h3>Traffic signals</h3><p>Dead signals, stuck walk lights and timing problems at busy intersections.</p></div>
+        <div class="code-cell"><span class="code">DRN</span><h3>Drainage &amp; flooding</h3><p>Clogged storm drains and pooled water that freezes into ice in winter.</p></div>
+        <div class="code-cell"><span class="code">SGN</span><h3>Signs &amp; debris</h3><p>Knocked-down stop signs, fallen branches and debris in the travel lane.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="why-title">
+    <div class="wrap grid-2">
+      <div class="stack">
+        <span class="eyebrow">Why real time</span>
+        <h2 id="why-title">A report made on the spot carries what a crew needs.</h2>
+        <p class="lede">The person standing next to the hazard knows exactly where it is and how bad it is. Today that knowledge gets lost in phone queues, web forms and language barriers. SayCity captures it in the moment and puts it in front of the people who can act.</p>
+      </div>
+      <div class="grid-2" style="align-items: start;">
+        <div class="tile">
+          <h3>For residents</h3>
+          <p>Report in seconds, in your own language, and see what happens next. No hold music, no guessing which department to call.</p>
+        </div>
+        <div class="tile">
+          <h3>For cities</h3>
+          <p>A live, ranked queue of clean, located, deduplicated reports from every neighborhood, including the ones that rarely call in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta band" aria-labelledby="cta-title">
+    <div class="wrap cta-inner">
+      <div>
+        <span class="eyebrow">Pilot program</span>
+        <h2 id="cta-title">Bring SayCity to your city.</h2>
+        <p class="muted">We're talking with city agencies, partners and investors now.</p>
+      </div>
+      <div class="btn-row" style="flex: 0 1 auto;">
+        <a class="btn" href="contact.html">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="for-cities.html">For cities</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="stack" style="gap: 12px;">
+        <a class="brand" href="index.html"><svg class="brand-mark" viewBox="40 50 432 432" aria-hidden="true"><path style="fill: var(--signal)" fill-rule="evenodd" d="M144 56H368A104 104 0 0 1 472 160V288A104 104 0 0 1 368 392H236L130 468L158 392H144A104 104 0 0 1 40 288V160A104 104 0 0 1 144 56ZM105 336A9 9 0 0 1 105 318H112V264A12 12 0 0 1 124 252H140A12 12 0 0 1 152 264V318H174V204A12 12 0 0 1 186 192H202A12 12 0 0 1 214 204V318H236V150L267 116V78H276V318H298V180A12 12 0 0 1 310 168H326A12 12 0 0 1 338 180V318H360V240A12 12 0 0 1 372 228H388A12 12 0 0 1 400 240V318H407A9 9 0 0 1 407 336Z"/></svg>SAYCITY</a>
+        <p class="muted">Every city. Every voice. Real-time change.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="for-cities.html">For cities</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><span class="mono">amohaghegh1@babson.edu</span></li>
+          <li><a href="contact.html">Send a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal"><span>© 2026 SayCity</span><span>Every voice counts</span></div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
